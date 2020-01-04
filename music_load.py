@@ -38,7 +38,6 @@ def get_music_name():
     driver.get(url)
     driver.switch_to.frame('g_iframe')
     req = driver.find_element_by_id('m-search')
-    #print(req.text).//div[@class="item f-cb h-flag  "]/div[2]//a   //*[@id="auto-id-9J3LCJFnLD5yb1rB"]/div/div/div[1]/div[2]/div/div/a/b
     # #获取ID
     a_id = req.find_element_by_xpath('.//div[@class="item f-cb h-flag  "]/div[2]//a').get_attribute('href')
     print(a_id)
@@ -58,7 +57,7 @@ def get_music_name():
 root = Tk()
 # 标题
 root.title ('音乐下载器v1.0')
-#阻止修改大小
+# 阻止修改大小
 root.resizable(0, 0)
 # 设置大小
 root .geometry("550x410+400+200")
