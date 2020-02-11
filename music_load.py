@@ -9,8 +9,8 @@ def song_load(item):
     song_name = item['song_name']
     song_url = 'http://music.163.com/song/media/outer/url?id={}.mp3'.format(song_id)
 #第四步，创建文件夹
-    os.makedirs('music_netease', exist_ok=True)
-    path = 'music_netease\{}.mp3'.format(song_name)
+    os.makedirs('music_neteasy', exist_ok=True)
+    path = 'C:\Users\Administrator\Desktop\music_neteasy\{}.mp3'.format(song_name)
     #显示数据到文本框
     time_now = time.strftime('%Y-%m-%d %H:%M:%S')
     #print('北京时间：'+time_now)
